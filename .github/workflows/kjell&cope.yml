@@ -34,4 +34,4 @@ jobs:
 
       - name: Deploy to main with SAM
         if: github.ref =='refs/heads/main'
-        run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --template-file template.yaml --stack-name kjell&cope-python --s3-bucket ${{ env.BUCKET_NAME }} --capabilities CAPABILITY_IAM --parameter-overrides BucketName=${{ env.BUCKET_NAME }}
+        run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --template-file template.yaml --stack-name kjell&cope-python --s3-bucket ${{ env.BUCKET_NAME }} --capabilities CAPABILITY_IAM --parameter-overrides BucketName=${{ env.BUCKET_NAME }} --region eu-north-1

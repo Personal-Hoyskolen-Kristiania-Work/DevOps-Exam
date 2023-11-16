@@ -37,4 +37,4 @@ jobs:
 
       - name: Deploy to main with SAM
         if: github.ref =='refs/heads/main'
-        run: sam deploy --template-file template.yaml --stack-name kjell&cope-python --capabilities CAPABILITY_IAM --parameter-overrides BucketName=${{ env.BUCKET_NAME }}
+        run: sam deploy --template-file template.yaml --stack-name kjell&cope-python --s3-bucket ${{ env.BUCKET_NAME }} --capabilities CAPABILITY_IAM --parameter-overrides BucketName=${{ env.BUCKET_NAME }}

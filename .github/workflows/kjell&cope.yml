@@ -29,6 +29,9 @@ jobs:
       - name: Set bucket name variable
         run: echo "BUCKET_NAME=${{ env.BUCKET_NAME }}" >> $GITHUB_ENV
 
-      - name: Deploy with SAM
+      - name: Build with SAM
+        run: sam build --use-container
+
+      - name: Deploy to main with SAM
         if: github.ref =='refs/heads/main'
-        run: sam deploy --template-file template.yaml --stack-name kjell&cope-python --capabilities CAPABILITY_IAM
+        run: sam deploy --template-file template.yaml --stack-name kjell&cope-python --capabilities CAPABILITY_IAM --parameter-overrides BucketName=${{ env.BUCKET_NAME }}

@@ -6,6 +6,9 @@ on:
       - main
       - python-feature/*
 
+env:
+  BUCKET_NAME: ${{ vars.BUCKET_NAME_GITHUB_CONFIG_VAR }}
+
 defaults:
   run:
     working-directory: ./kjell

@@ -11,6 +11,10 @@ Globals:
     Timeout: 60
     MemorySize: 512
 
+Parameters:
+  BucketName:
+    Type: String
+
 Resources:
 
   Bucket:
@@ -23,6 +27,9 @@ Resources:
       CodeUri: hello_world/
       Handler: app.lambda_handler
       Runtime: python3.9
+      Environment:
+        Variables:
+          BUCKET_NAME: !Ref BucketName
       Architectures:
         - x86_64
       Policies:

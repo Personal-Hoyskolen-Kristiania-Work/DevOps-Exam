@@ -12,8 +12,6 @@ import os
 #
 # Hilsen Kjell
 
-import os
-
 s3_client = boto3.client('s3', region_name='eu-west-1')
 rekognition_client = boto3.client('rekognition', region_name='eu-west-1')
 

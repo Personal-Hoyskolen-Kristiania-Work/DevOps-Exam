@@ -4,7 +4,8 @@
 
 ### [Oppsett av konfigurasjonsvariabler og hemmeligheter i Github actions](#konfigurasjonsvariabler-og-hemmeligheter-i-github-actions)
 
-### 
+### Opggave 1 Kjells python kode
+#### [Kjells python oppsett](#kjells-python-oppsett)
 
 ### Konfigurasjonsvariabler og hemmeligheter i Github actions
 
@@ -27,3 +28,8 @@
 #### Konfigurasjonsvariabler og hemmeligheter har to felter, et for navn og et for verdi. Navnet brukes for å refferere til konfigurasjonsvariabler og hemmeligheter, og verdien er inneholde i konfigurasjonsvariabel eller hemmelighet.
 
 ![Screenshot 2023-11-20 153122](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/assets/56083504/c6c79b21-bf7a-4f48-b510-056f231e5be0)
+
+### Kjells python oppsett
+#### Github actions status:
+[![kjell&cope](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/kjell&cope.yml/badge.svg)](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/kjell&cope.yml)
+

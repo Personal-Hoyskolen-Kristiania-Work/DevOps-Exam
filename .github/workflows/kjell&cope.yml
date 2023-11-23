@@ -1,9 +1,6 @@
 name: kjell&cope
 
-on:
-  push:
-    branches:
-      - /*
+on: push
 
 env:
   BUCKET_NAME: ${{ vars.BUCKET_NAME_GITHUB_CONFIG_VAR }}

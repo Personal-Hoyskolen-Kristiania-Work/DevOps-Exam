@@ -18,12 +18,11 @@ jobs:
           aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 244530008913.dkr.ecr.eu-west-1.amazonaws.com
           rev=$(git rev-parse --short HEAD)
           docker build . -t poem-ppe:$rev -t latest
+          docker tag poem-ppe 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:$rev
+          docker latest 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:$rev
 
       - name: Push Docker image from main branch
         if: github.ref =='refs/heads/main'
         run: |
-         docker tag poem-ppe 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:$rev
-         docker latest 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:$rev
-         
          docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:poem-ppe:$rev
          docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:latest:$rev

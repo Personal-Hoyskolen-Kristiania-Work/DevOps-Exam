@@ -19,6 +19,7 @@ jobs:
           rev=$(git rev-parse --short HEAD)
           
           docker build . -t poem-ppe$rev -t latest
+
       - name: Push Docker image from main branch
         if: github.ref =='refs/heads/main'
         run: |

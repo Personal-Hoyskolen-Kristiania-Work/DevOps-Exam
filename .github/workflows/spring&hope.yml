@@ -19,6 +19,7 @@ jobs:
           rev=$(git rev-parse --short HEAD)
           
           docker build . -t poem-ppe$rev -t latest
+
       - name: Push Docker image from main branch
         if: github.ref =='refs/heads/main'
         run: |
@@ -26,7 +27,7 @@ jobs:
           
           docker build . -t poem-ppe$rev -t latest
           
-          docker tag poem-ppe$rev tag poem-ppe$rev 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:$rev
-          docker tag poem-ppe$rev tag latest 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:$rev
+          docker tag poem-ppe$rev tag poem-ppe$rev 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:latest
+          docker tag poem-ppe$rev tag latest 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:latest
           
-          docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:$rev
+          docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:latest

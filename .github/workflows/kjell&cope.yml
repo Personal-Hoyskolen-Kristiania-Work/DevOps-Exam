@@ -3,8 +3,7 @@ name: kjell&cope
 on:
   push:
     branches:
-      - main
-      - python-feature/*
+      - /*
 
 env:
   BUCKET_NAME: ${{ vars.BUCKET_NAME_GITHUB_CONFIG_VAR }}

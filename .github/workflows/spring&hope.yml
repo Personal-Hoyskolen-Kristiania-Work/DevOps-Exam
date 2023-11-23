@@ -22,4 +22,5 @@ jobs:
 
       - name: Push Docker image from main branch
         if: github.ref =='refs/heads/main'
-        run:  docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034
+        run:  docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:poem-ppe:$rev
+        run:  docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:latest

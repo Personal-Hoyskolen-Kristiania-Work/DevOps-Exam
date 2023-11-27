@@ -1,0 +1,3 @@
+variable "TerraName" {
+    type = string
+}

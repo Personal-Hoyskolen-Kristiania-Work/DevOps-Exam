@@ -5,7 +5,11 @@
 ### [Oppsett av konfigurasjonsvariabler og hemmeligheter i Github actions](#konfigurasjonsvariabler-og-hemmeligheter-i-github-actions)
 
 ### Opggave 1 Kjells python kode
-#### [Kjells python](#kjells-python-oppsett)
+#### [Kjells python kode med Github actions badge](#kjells-python-oppsett)
+
+### Oppgave 5/ 4.2
+### [A. Flyt](#flyt)
+
 
 ### Konfigurasjonsvariabler og hemmeligheter i Github actions
 
@@ -27,6 +31,14 @@
 ![Screenshot 2023-11-20 153122](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/assets/56083504/c6c79b21-bf7a-4f48-b510-056f231e5be0)
 
 ### Kjells python oppsett
-#### Github actions status:
-[![kjell&cope](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/kjell&cope.yml/badge.svg)](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/kjell&cope.yml)
+#### Github actions status: [![kjell&cope](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/kjell&cope.yml/badge.svg)](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/kjell&cope.yml)
 
+#### OBS, huske å åpne terminal i hello_world mappen for å kjøre docker kommandoer for denne oppgaven.
+
+### Oppgave 5/ 4.2
+
+#### Flyt
+
+##### Continuous Integration (`CI`) er en praktisert måte for utviklere å samle nye endringer i kode ofte og bygge og kjøre et første set med tester for å kjapt se om koden fungerer.
+##### Continues Integration hjelper utviklere med å finne feil og konflikter tidlig i utviklingsprosessen. Dette kan spare utviklere mye tid, fordi feil og konflikter kan bli rettet før de blir større problemer som tar lengere tid og rette.
+##### En måte utviklere ofte utvikler med `CI` og andre DevOps konsepter er i det som kalles trunk based development. I trunk based development har man en hovedgren, og mange mindre grener for nye implementasjoner i koden. Implementasjonene skal holdes små, og går ofte ganske kjapt. Noen av fordelene med dette er mindre mengde kode som slås sammen av gangen, som leder til mindre feil, effektiv utvikling, med oftere oppdateringer av en branch som alle deler.

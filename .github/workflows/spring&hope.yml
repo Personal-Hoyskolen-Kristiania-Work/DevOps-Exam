@@ -45,7 +45,9 @@ jobs:
       AWS_REGION: eu-west-1
       IMAGE: 244530008913.dkr.ecr.eu-west-1.amazonaws.com/2034:latest
       PREFIX: 2034
-    #    TF_LOG: trace
+    defaults:
+      run:
+        working-directory: ./infra
     steps:
       - uses: actions/checkout@v3
       - name: Setup Terraform

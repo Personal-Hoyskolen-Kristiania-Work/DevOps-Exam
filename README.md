@@ -7,7 +7,7 @@
 ### [Oppgave 1 til 3](#oppgave-en-til-tre)
 
 ### Oppgave 5/ 4 2.0
-### [A. Flyt](#flyt)
+#### [A. Flyt](#flyt)
 
 
 ### Konfigurasjonsvariabler og hemmeligheter i Github actions

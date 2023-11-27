@@ -38,7 +38,7 @@
 ##### Github actions status: [![kjell&cope](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/kjell&cope.yml/badge.svg)](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/kjell&cope.yml)
 
 #### Oppgave 2 og 3 Java, spring boot docker og terraform
-##### Github actions status: 
+##### Github actions status: [![spring&hope](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/spring&hope.yml/badge.svg)](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/actions/workflows/spring&hope.yml)
 
 ### Oppgave 5/ 4 2.0
 

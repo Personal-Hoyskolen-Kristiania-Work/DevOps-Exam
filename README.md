@@ -23,6 +23,8 @@
 
 #### Du skal nå ha nådd en side, med titlene `Secrets` og `Variables` oppe til venstre, og en grønn knapp for å lage ny hemmeligheter. Dersom du trykker på `Variables` tittelen vil den grønne knappen la deg lage variabler. Den oppdaterer seg med tittelen som er valgt.
 
+##### det er også greit å nevne at disse to navnene på hemmelighetene i bildet under (`AWS_ACCESS_KEY_ID` og `AWS_SECRET_ACCESS_KEY`), svarer til nøkkelverdier du må hente fra `AIM` tjenesten i `AWS` for å kunne koble github action opp mot `AWS`. Disse to navnene må være like i din fork av repositoriet, men nøkkelverdiene må være unike, og de må ikke deles med andre på github, bare i disse `Secrets` variablene.
+
 ![Screenshot 2023-11-20 152850](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/assets/56083504/bc51714b-ae82-420e-b944-b31e1e9deaad)
 
 #### Konfigurasjonsvariabler og hemmeligheter har to felter, et for navn og et for verdi. Navnet brukes for å refferere til konfigurasjonsvariabler og hemmeligheter, og verdien er inneholde i konfigurasjonsvariabel eller hemmelighet.

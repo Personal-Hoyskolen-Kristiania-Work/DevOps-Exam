@@ -4,6 +4,8 @@
 
 ### [Oppsett av konfigurasjonsvariabler og hemmeligheter i Github actions](#konfigurasjonsvariabler-og-hemmeligheter-i-github-actions)
 
+### [verdier i Github for github actions](#github-verdier)
+
 ### [Oppgave 1 til 3](#oppgave-en-til-tre)
 
 ### Oppgave 5/ 4 2.0
@@ -23,15 +25,25 @@
 
 #### Du skal nå ha nådd en side, med titlene `Secrets` og `Variables` oppe til venstre, og en grønn knapp for å lage ny hemmeligheter. Dersom du trykker på `Variables` tittelen vil den grønne knappen la deg lage variabler. Den oppdaterer seg med tittelen som er valgt.
 
-##### det er også greit å nevne at disse to navnene på hemmelighetene i bildet under (`AWS_ACCESS_KEY_ID` og `AWS_SECRET_ACCESS_KEY`), svarer til nøkkelverdier du må hente fra `AIM` tjenesten i `AWS` for å kunne koble github action opp mot `AWS`. Disse to navnene må være like i din fork av repositoriet, men nøkkelverdiene må være unike, og de må ikke deles med andre på github, bare i disse `Secrets` variablene.
-
 ![Screenshot 2023-11-20 152850](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/assets/56083504/bc51714b-ae82-420e-b944-b31e1e9deaad)
 
 #### Konfigurasjonsvariabler og hemmeligheter har to felter, et for navn og et for verdi. Navnet brukes for å refferere til konfigurasjonsvariabler og hemmeligheter, og verdien er inneholde i konfigurasjonsvariabel eller hemmelighet.
 
 ![Screenshot 2023-11-20 153122](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/assets/56083504/c6c79b21-bf7a-4f48-b510-056f231e5be0)
 
+### Github verdier
+#### Secrets
+##### `AWS_ACCESS_KEY_ID` og `AWS_SECRET_ACCESS_KEY` svarer til nøkkelverdier du må hente fra `AIM` tjenesten i `AWS` for å kunne koble github action opp mot `AWS`. Disse to navnene må være like i din fork av repositoriet, men nøkkelverdiene må være unike, og de må ikke deles med andre på github, bare i disse `Secrets` variablene.
 
+
+![Screenshot 2023-11-20 152850](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/assets/56083504/55bfc3bc-57e7-4f2e-895a-ef699be93404)
+
+#### Config variabler
+##### Variablene `PYTHON_STACK_NAME` (innheholder verdien: kjell-and-cope-python), og `BUCKET_NAME_GITHUB_CONFIG_VAR` (inneholder verdien: 20342034) er variabler som tas i bruk av github action. Disse bør være de samme, men dersom du ønsker å lage et eget oppsett for stack og bucket, så kan du endre verdiene.
+
+![Screenshot 2023-11-27 195000](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/assets/56083504/0775476c-547d-434c-ac4f-e00d8008cf6f)
+
+![Screenshot 2023-11-27 194950](https://github.com/Personal-Hoyskolen-Kristiania-Work/DevOps-Exam/assets/56083504/e490b425-e1a6-42aa-8203-e38a23df7d6e)
 
 ### Oppgave en til tre
 
